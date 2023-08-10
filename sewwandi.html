@@ -1,0 +1,592 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+<link rel="stylesheet" href="style.css">
+<script src="script.js"></script>
+<style>
+.container {
+  position: relative;
+  text-align: center;
+  color: white;
+}
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+  </style>
+
+  <style>
+.flex-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.flex-container > div {
+  width: 80px;
+  margin: 10px;
+  text-align: center;
+  line-height: 50px;
+}
+</style>
+
+</style>
+<style>
+.w3-button {width:80px;}
+</style>
+</style>
+<style>
+.w3-red {background-color: red;}
+</style>
+<style>
+.w3-round-large {}
+</style>
+<style>
+* {
+  box-sizing: border-box;
+}
+
+/* Style the top navigation bar */
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+}
+
+/* Style the topnav links */
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* Change color on hover */
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* On screens that are 600px wide or less, make the menu links stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .topnav a {
+    float: none;
+    width: 100%;
+  }
+}
+</style>
+<style>
+    .section {
+        width: 100vw;
+            height: 40vh;
+            background-color: #EF5354;
+            font-size: 50px;
+            color: white;
+            text-align: center;
+            margin: 10px 5px;
+        }
+          
+        .one,
+        .three {
+            background-color: #E03B8B;
+        }
+    </style>
+    <style>
+
+/* Style the header */
+.header {
+  background-color: #f1f1f1;
+  text-align: left;
+}
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* Change color on hover */
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+</style>
+
+<body>
+<!--sidebar-->
+<div class="header">
+  <div class="nav">
+<div class="w3-sidebar w3-bar-block w3-border-right" style="display:none" id="mySidebar">
+  <button onclick="w3_close()" class="w3-bar-item w3-xlarge w3-teal">☰ &times;</button>
+  <a href="#section1" class="w3-bar-item w3-button" ><font color="black">HOME</font></a>
+  <a href="#section2" class="w3-bar-item w3-button"><font color="black">TOP DESTINATIONS</font></a>
+  <a href="#section3" class="w3-bar-item w3-button"><font color="black">FOODS</font></a>
+   <div class="w3-dropdown-click">
+      <button class="w3-button" onclick="myFunction()">
+        CULTURE <i class="fa fa-caret-down"></i>
+      </button>
+      <div id="demo" class="w3-dropdown-content w3-bar-block w3-card">
+        <a href="#section4" class="w3-bar-item w3-button">ARCHITECTURE</a>
+        <a href="#section5" class="w3-bar-item w3-button">ENTERTAINMENT</a>
+      </div>
+    </div>
+  <a href="#section6" class="w3-bar-item w3-button"><font color="black">FASHION</font></a>
+  <a href="#section7" class="w3-bar-item w3-button"><font color="black">ABOUT</font></a>
+</div>
+</div>
+
+</div>
+
+<div class="w3-container">
+<div class="w3-teal">
+  <button class="w3-button w3-teal w3-xlarge" onclick="w3_open()">☰
+  </button>
+  </div>
+<!--navigationbar-->
+
+<ul class="topnav">
+  <li style="float:left"><a href="#about"><img src="logo.jpg" width="100" height="50"></a></li>
+  <li style="float:left"><a href="#section1"><p><font size ="3">HOME</font></p></a></li>
+    <li style="float:left"><a href="#section2"><p><font size ="3">TOP DESTINATIONS</font></p></a></li>
+  <li style="float:left"><a href="#section3"><p><font size ="3">FOODS</font></p></a></li>
+  <li style="float:left"><a href="#section4"><p><font size ="3">CULTURE</font></p></a></a></li>
+  <li style="float:left"><a href="#section5"><p><font size ="3">FASHION</font></p></a></a></li>
+  <li style="float:left"><a href="#section7"><p><font size ="3">ABOUT</font></p></a></a></li>
+
+    </a></li>
+    <li style="float:left"><input type="textarea" placeholder="Search" onkeyup="mySearchFunction()" title="Type in a category"></li>
+   <li><button class="w3-bar-item w3-button w3-red">Go</button></li></ul>
+  </div>
+
+
+</head>
+<!--home--->  
+<body>
+<div id="section1">
+<div class="container">
+  <img class="w3-animate-fading" src="HOME.jpg" style="width:100%;">
+  <div class="centered"><p>
+<center><font face="Arial Black" size="7" color="orange" class="glow"><b><i><br>&#128516; VISIT SOUTH KOREA &#128516;</i></b></center></font></p><br><br>
+<center><font face="Arial Black" font size="7" color="orange"><b><i>대한민국</i></b></center></font></p><br>-->
+<center><font face="Algerian" font size="6" color="yellow"><marquee direction="left" scrollamount=10 width="1000px"> <b>&#128151;.. All you need is love and kimchi ..&#128151; </b></center></marquee></font></p>
+</div></div>
+
+<body>
+  <p id="demo"></p>
+
+<h3> South Korea officially the Republic of Korea is a country in East Asia. It constitutes the southern part of the Korean Peninsula and borders North Korea along the Korean Demilitarized Zone. The country's western border is formed by the Yellow Sea, while its eastern border is defined by the Sea of Japan. South Korea claims to be the sole legitimate government of the entire peninsula and adjacent islands. <br><br> It has a population of 51.96 million, of which roughly half live in the Seoul Capital Area, the fourth most populous metropolitan area in the world. 
+South Korea's citizens enjoy one of the world's fastest Internet connection speeds and the densest high-speed railway network. The country is the world's ninth-largest exporter and ninth-largest importer. Its armed forces are ranked as one of the world's strongest militaries, with the world's second-largest standing army by military and paramilitary personnel. <br><br>In the 21st century, South Korea has been renowned for its globally influential pop culture, particularly in music (K-pop), TV dramas (K-dramas) and cinema, a phenomenon referred to as the Korean Wave. It is a member of the OECD's Development Assistance Committee, the G20, the IPEF, and the Paris Club. </h3>
+
+<video autoplay muted loop id="myVideo" width="700" height="500">
+  <source src="SK.mp4" type="video/mp4">
+  Your browser does not support HTML5 video.
+</video>
+  <center><button id="myBtn2" onclick="myBTNFunction()">PAUSE</button></center>
+  <hr class="new4">
+<script>
+var video = document.getElementById("myVideo");
+var btn = document.getElementById("myBtn2");
+
+function myBTNFunction() {
+  if (video.paused) {
+    video.play();
+    btn.innerHTML = "PAUSE";
+  } else {
+    video.pause();
+    btn.innerHTML = "PLAY";
+  }
+}
+</script>
+<div id="section2">
+<h2>TOP DESTINATIONS IN SOUTH KOREA</h2>
+<div class="gallery">
+  <div class="w3-display-container w3-hover-opacity" style="width:100%">
+  <img src="seoul.webp" width="900" height="700"></div>
+  <div class="desc"><mark>Seoul </mark>officially known as the Seoul Special City, is the capital and largest metropolis of South Korea. According to the 2020 census, Seoul has a population of 9.9 million people, and forms the heart of the Seoul Capital Area with the surrounding Incheon metropolis and Gyeonggi province.
+  </div>
+</div>
+
+
+<div class="gallery">
+  <div class="w3-display-container w3-hover-opacity" style="width:100%">
+  <img src="busan.jpg" width="600" height="600"></div>
+  <div class="desc"> <mark> Busan </mark> officially known as Busan Metropolitan City, is South Korea's second most populous city after Seoul, with a population of over 3.4 million inhabitants. Formerly romanized as Pusan, it is the economic, cultural and educational center of southeastern South Korea. Be sure to visit the Beomeosa Temple.
+</div>
+</div>
+</div>
+
+<div class="gallery">
+  <div class="w3-display-container w3-hover-opacity" style="width:100%">
+  <img src="namsan tower.jpg" width="600" height="600"></div>
+  <div class="desc"><mark>The N Seoul Tower </mark>is a communication and observation tower located on Nam Mountain in South Korea. The second highest point in Seoul and is considered a local landmark. Built in 1969, the N Seoul Tower is South Korea's first general radio wave tower, providing TV and radio broadcasting in Seoul.
+  </div>
+</div>
+</div>
+
+<div class="gallery">
+  <div class="w3-display-container w3-hover-opacity" style="width:100%">
+  <img src="changdeokgung-palace.jpg" width="600" height="600"></div>
+  <div class="desc"> <mark>Changdeokgung Palace </mark>is set within a large park in Jongno District, Seoul, South Korea. It is one of the "Five Grand Palaces" built by the kings of the Joseon dynasty (1392–1897). As it is located east of Gyeongbok Palace, Changdeokgung—along with Changgyeonggung—is also referred to as the "East Palace".
+  </div>
+</div>
+</div>
+
+<div class="gallery">
+  <img src="Space.png">
+</div>
+<div class="gallery">
+  <div class="w3-display-container w3-hover-opacity" style="width:100%">
+  <img src="bulguksa-temple.jpg" width="600" height="600"></div>
+  <div class="desc"> <mark> Bulguksa </mark> is located on the slopes of Mount Toham (Jinheon-dong, Gyeongju city, North Gyeongsang province, South Korea). It is a head temple of the Jogye Order of Korean Buddhism and encompasses six National treasures of South Korea, including the Dabotap and Seokgatap stone pagodas.
+  </div>
+</div>
+</div>
+
+<div class="gallery">
+  <div class="w3-display-container w3-hover-opacity" style="width:100%">
+  <img src="jeju-island.webp" width="600" height="600"></div>
+  <div class="desc"> <mark>Jeju Island</mark> is South Korea's largest island, covering an area of 1,833.2 km2, which is 1.83 percent of the total area of the country. It is also the most populous island in South Korea the total resident registration population of Jeju Province is 672,948, of which 4,000 reside on outlying islands such as the Chuja Islands and Udo Island. 
+  </div>
+</div>
+</div>
+
+<div class="gallery">
+  <img src="Space.png">
+
+</div>
+
+</div>
+
+<h2>DELICIOUS KOREAN FOODS</h2>
+<div id="section3">
+<marquee direction="right" scrollamount=10><h5 id="h1"><font color="darkblue"> &#128512;..IT WOULD BE A DREAM TO VISIT KOREA & TRY KOREAN FOODS...&#128512;&#127843;&#129375;</font></h5></marquee>
+<div class="gallery1">
+  <div class="container2">
+  <img src="bibimbap.jpeg" class="image2">
+  <div class="middle2">
+    <div class="text2">BIBIMBAP</div>
+  </div>
+</div>
+  <div class="desc"><mark>Bibimbap</mark> is a Korean rice dish.The term bibim means "mixing" and bap is cooked rice. It is served as a bowl of warm white rice topped with namul and gochujang. Egg and sliced meat are common additions, stirred together thoroughly just before eating.In South Korea, Jeonju, Jinju, and Tongyeong are especially famous for their versions of bibimbap.
+  </div>
+</div>
+
+<div class="gallery1">
+  <div class="container2">
+  <img src="kimchi.webp" class="image2">
+  <div class="middle2">
+    <div class="text2">KIMCHI</div>
+  </div>
+</div>
+  <div class="desc"><mark>Kimchi </mark>is a traditional Korean banchan consisting of salted and fermented vegetables, most commonly using napa cabbage or Korean radish. A wide selection of seasonings are used, including gochugaru, spring onions, garlic, ginger, and jeotgal, etc.Kimchi is also used in a variety of soups and stews. Kimchi is a staple food in Korean cuisine.
+  </div>
+</div>
+
+<div class="gallery1">
+  <div class="container2">
+  <img id="image2" src="cold noodle.webp" class="image2">
+  <div class="middle2">
+    <div class="text2">COLD NOODLE</div>
+  </div>
+</div>
+  <div class="desc"><mark>Naengmyeon</mark> is a noodle dish of North Korean origin which consists of long and thin handmade noodles made from the flour and starch of various ingredients, including buckwheat, potatoes, sweet potatoes, arrowroot starch, and kudzu. Buckwheat predominates. Other varieties of naengmyeon are made from ingredients such as seaweed and green tea.
+  </div>
+</div>
+
+<div class="gallery1">
+  <div class="container2">
+  <img id="image2" src="jajangnyeon.webp" class="image2">
+  <div class="middle2">
+    <div class="text2">JAJANGMYEON</div>
+  </div>
+</div>
+  <div class="desc"><mark>Jajangmyeon</mark> is a Korean-style Chinese noodle dish topped with a thick sauce made of chunjang, diced pork, and vegetables. It originated in Incheon, Korea where Chinese migrant workers started making zhajiangmian in the late 19th century. Modifications in Korea such as a darker and sweeter sauce differentiate the Korean dish from the Chinese version.This heartly noodle dish is great for you.
+  </div>
+</div>
+
+<div class="gallery">
+  <img src="Space.png">
+</div>
+
+<div class="gallery1">
+   <div class="container2">
+  <img id="image2" src="fried chicken.jpg" class="image2">
+  <div class="middle2">
+    <div class="text2">FRIED CHICKEN</div>
+  </div>
+</div>
+  <div class="desc"><mark>Yangnyeom Korean Fried Chicken</mark> is a type of chicken coated in a sweet and spicy sauce. This sauce contains various ingredients, including soy sauce, garlic, and chilli paste. This dish is named for the delicious seasoning used to coat the chicken.Korean fried chicken tends to be more light and crispy with a thin.
+  </div>
+</div>
+
+<div class="gallery1">
+  <div class="container2">
+  <img id="image2" src="chicken soup.webp" class="image2">
+  <div class="middle2">
+    <div class="text2">CHICKEN SOUP</div>
+  </div>
+</div>
+  <div class="desc"><mark>Dak Gomtang (Korean Chicken Soup) </mark> is the ultimate comfort food that is absolutely delicious yet so incredibly simple to make! Made with a whole chicken and aromatic vegetables, the broth is served alongside rice or noodles which is topped with shredded chicken and chopped green onions.
+  </div>
+</div>
+
+<div class="gallery">
+  <img src="Space.png">
+</div>
+</div>
+
+<p>&nbsp;</p>
+
+<h2>KOREAN CULTURE</h2>
+<div id="section4">
+<h3>South Korea shares its traditional culture with North Korea, but the two Koreas have developed distinct contemporary forms of culture since the peninsula was divided in 1945. Historically, while the culture of Korea has been heavily influenced by that of neighboring China, it has nevertheless managed to develop a unique cultural identity that is distinct from its larger neighbor. Its rich and vibrant culture left 21 UNESCO Intangible Cultural Heritages of Humanity, the fourth largest in the world,[needs update] along with 15 World Heritage Sites. The South Korean Ministry of Culture, Sports and Tourism actively encourages the traditional arts, as well as modern forms, through funding and education programs.<br> According to the 2021 edition of the Press Freedom Index, South Korea has the highest level of press freedom on the Asian continent.
+The industrialization and urbanization of South Korea have brought many changes to the way modern Koreans live. Changing economics and lifestyles have led to a concentration of population in major cities, especially the capital Seoul, with multi-generational households separating into nuclear family living arrangements. A 2014 Euromonitor study found that South Koreans drink the most alcohol on a weekly basis compared to the rest of the world. South Koreans drink 13.7 shots of liquor per week on average and, of the 44 other countries analyzed, Russia, the Philippines, and Thailand follow.</h3>
+
+<div id="section4">
+<p id="para1"><font size="5">ARCHITECTURE</font></p>
+
+<div class="flex-container">
+  <img src="hidden1.png" width="400" height="300">
+  <img src="Architecture.png" width="400" height="300">
+  <img src="hankok architecture.jpg" width="400" height="300">
+</div>
+
+<p id="para2"><font size="4">Korean Architecture refers to an architectural style that developed over centuries in Korea. Throughout the history of Korea, various kingdoms and royal dynasties have developed a unique style of architecture with influences from Buddhism and Korean Confucianism.
+Having been deeply influenced by Chinese architecture, traditional Korean architecture can be mostly recognized by its sloping roofs.
+Just like in the case of other Korean arts, Korean architecture is distinguished by its naturalistic tendencies, simplicity, economy of shape, and avoidance of extremes.<br>
+In Korean architecture, buildings are structured vertically and horizontally. A construction usually rises from a stone subfoundation to a curved roof covered with tiles, held by a console structure and supported on posts; walls are made of earth or are sometimes totally composed of movable wooden doors. Architecture is built according to the kan unit, the distance between two posts, and is designed so that there is always a transitional space between the "inside" and the "outside."
+In the mid-Joseon period, the winglike bracket form appeared, which, according to some authors, better suited the peninsula's poor economic situation that resulted from repetitive invasions. Only in buildings of importance like palaces or sometimes temples were the multicluster brackets still used. Korean Confucianism also led to more sober and simple solutions
+</font></p>
+
+<div id="section5">
+  <hr class="new4">
+<p id="para1"><font size="5">ENTERTAINMENT
+<center><p id="para3"><font size="5">KPOP</font></p></center>
+<marquee direction="right" scrollamount=10><h5 id="h1"> &#128512;..ALL YOU WANT IS GET A TICKET FOR BTS CONCERT, RIGHT..&#128512;&#127915;</h5></marquee>
+
+<div class="flex-container">
+  <img src="hidden1.png" width="400" height="300">
+  <img src="bts2.webp" width="400" height="300">
+  <img src="bts1.webp" width="400" height="300">
+  
+</div>
+
+<p id="para2"><font size="4">South Korea has a thriving entertainment industry where various facets of South Korean entertainment, including television dramas, films, and popular music, has garnered international popularity and generated significant export revenues for the nation's economy. The cultural phenomenon known as Hallyu or the "Korean Wave", has swept many countries across Continental and East Asia making South Korea a major soft power as an exporter of popular culture and entertainment, rivaling Western nations such as the United States and the United Kingdom.Until the 1990s, trot and traditional Korean folk based ballads dominated South Korean popular music. The emergence of the South Korean pop group Seo Taiji and Boys in 1992 marked a turning point for South Korean popular music, also known as K-pop. Since the 1990s, the genre has continuously re-modernized itself by incorporating elements of popular musical genres and trends from across the world such as Western popular music, experimental, jazz, gospel, Latin, classical, hip hop, rhythm and blues, electronic dance, reggae, country, folk, and rock on top of its uniquely traditional Korean music roots.[383] Though Western-style pop, hip hop, rhythm and blues, rock, folk, electronic dance oriented acts have become dominant in the contemporary South Korean popular music scene, trot is still continues to be appreciated and enjoyed by South Koreans from older generations. K-pop idols, stars, and groups are well known across Continental Asia and have found international fame in the Western World by making millions of dollars in export revenue by harnessing and tapping into new uncharted music markets beyond East Asia.<br><span id="dots">...</span><span id="more">
+  <mark>BTS</mark> also known as the Bangtan Boys, is a South Korean boy band formed in 2010. The band consists of Jin, Suga, J-Hope, RM, Jimin, V, and Jungkook, who co-write or co-produce much of their material. Originally a hip hop group, their musical style has evolved to incorporate a wide range of genres, while their lyrics have focused on subjects including mental health, the troubles of school-age youth and coming of age, loss, the journey towards self-love, individualism, and the consequences of fame and recognition. Their discography and adjacent work has also referenced literature, philosophy and psychological concepts, and includes an alternate universe storyline.</span>
+  <button onclick="myButtonFunction()" id="myBtn">Read more</button>
+
+  <hr class="new4">
+<center><p id="para3"><font size="5">KDRAMA</font></p></center>
+<marquee direction="right" scrollamount=10><h5 id="h1"> &#128512;..GET READY POPCORN & WATCH MOVIES..&#128512;&#127871;</h5></marquee>
+<div class="gallery">
+  <div class="img-comp-container">
+  <div class="img-comp-img">
+  <img src="858864de80.webp" width="300" height="200">
+  </div>
+<div class="img-comp-img img-comp-overlay">
+    <img src="kdrama.webp" width="300" height="200">
+  </div>
+</div>
+</div>
+<script>
+/*Execute a function that will execute an image compare function for each element with the img-comp-overlay class:*/
+initComparisons();
+</script>
+
+<div class="gallery">
+  <img src="k-drama-piller-page-cover.webp">
+</div>
+<div class="gallery">
+  <img src="image-38.png">
+</div>
+<div class="gallery">
+  <img src="maxresdefault-1.webp">
+</div>
+
+<p id="para2"><font size="4">Korean dramas more popularly known as K-dramas, refer to television series in the Korean language that are made in South Korea.
+They are popular worldwide, especially in Asia, partially due to the spread of Korean popular culture and their widespread availability via streaming services, which often offer subtitles in multiple languages. Many K-dramas have been translated internationally, and some of them have had a significant influence in other nations. In other countries, traditional television channels have broadcast some of the most well-known dramas. For example, Dae Jang Geum was sold in 150 countries.
+Korean dramas have attracted international attention for their fashion, style, and culture. Their rise in popularity has led to a great boost to fashion lines.
+The “Korean Wave,” or Hallyu, has made great impacts on countries around the world. With the wave came Korean TV Dramas. “In the late 2000s, South Korea was producing more TV dramas than ever before.” <br>The most successful dramas incorporate skillful combinations of familial affection, sex appeal, and emotional desirability. The demand for K-Drama has only increased over the last twenty years after it was nearly destroyed due to Hollywood films, Japanese pop culture, and the financial crisis that hit South Korea since 1997.  K-dramas continue to gain traction internationally today.
+K-dramas have a multitude of different genre such as action dramas, historical dramas, school dramas, medical dramas, legal dramas, or even horror comedies. While most dramas contain romantic elements and deep emotional themes, some may also contain a tragedy or slice of life theme. There are various styles and tones.
+The main themes of Korean television dramas are friendship, family values, and love, blending traditional Confucian with Western materialism and individualism.
+However, it is an emerging trend amongst Korean dramas to showcase ongoing societal issues of Korean society, such as stigma of mental illness, gender inequality, suicide, classism, bullying, spy cameras, corruption, homophobia, or racism.</font></p>
+</font></p></font></p></div>
+
+<div id="section6">
+<hr class="new4">
+<h2>FASHION</h2>
+<div class="gallery1">
+  <img src="hidden2.png">
+</div>
+<div class="gallery1">
+  <img src="ukhtoi8omxfyg2lo1cqs.jpg">
+</div>
+<div class="gallery1">
+  <img src="m8n6kvnmha5fto06wxed.jpg">
+</div>
+<div class="gallery1">
+  <img src="hidden2.png">
+</div>
+      <p id="para2"><font size="4"><mark>The hanbok</mark> is traditional Korean clothing. It is worn not only by South and North Korea, but also by the joseon-jok, a minority group in China. The term hanbok literally means “Korean clothing.” Hanbok is also depicted in detail on murals from the Goguryeo period in Korea. Due to the isolation from each other for about 50 years, the styles of hanbok in South Korea, North Korea, and joseonjok, worn by the Korean ethnics from these three countries have developed separately from each other.Since the 1990s, the South Korean-style and the North Korean-style have been looking more and more similar to each other.Similarly, since the Chinese economic reform of China, there have been more exchanges with both Koreas leading to both the development and changes in joseonjok-style Chosŏn-ot in China; some of designs of the joseonjok-style Chosŏn-ot have been influenced and inspired by both South-Korean and North Korean hanbok designs.Earliest visual depictions of hanbok can be traced back to the Three Kingdoms of Korea period  with roots in the Proto-Koreanic people of what is now northern Korea and Manchuria; it can also be found in the arts of the Goguryeo tomb murals of the same period from the 4th to 6th century AD, where the basic structure of the hanbok was established at least since this period. <br>The ancient hanbok consisted of a jeogori (top), baji (pants), chima (skirt), and the po (coat). The basic structure of hanbok was designed to facilitate the ease of movement and integrated many motifs of Mu-ism. These basic structural features of the hanbok remains relatively unchanged to this day. However, present-day hanbok, which is worn nowadays, is patterned after the hanbok worn in the Joseon dynasty, especially those worn by the nobility and royalty. In the past, however, commoners (seomin), were not allowed to wear what is now known as hanbok and instead wore minbok (clothing of commoners) which was typically white or off-white in colours; the commoners were only allowed to wear hanbok on their wedding day and on special occasions. The extensive use of white clothing among the commoners lead to Korea being referred as "dressed people of white. Nowadays, contemporary Koreans wear hanbok for formal or semi-formal occasions and events such as weddings, festivals, celebrations, and ceremonies. In 1996, the South Korean Ministry of Culture, Sports and Tourism established "Hanbok Day" to encourage South Korean citizens to wear the hanbok.</font></p>
+    </div>
+
+<div id="section7">
+<hr class="new4">
+<h2>ABOUT</h2>
+<div class="gallery2">
+  <img src="flag.png" >
+  <div class="desc"><font size="3">The national flag of South Korea, and colloquially known as the flag of Korea, has three parts: a white rectangular background, a red and blue Taegeuk in its center, accompanied by four black trigrams, one in each corner. Flags similar to the current Taegeukgi were used as the national flag of Korea by the Joseon dynasty.</font>
+  </div>
+</div>
+
+<div class="gallery2">
+  <img src="location.webp" >
+ <div class="desc"><font size="3">South Korea is located in East Asia, on the southern portion of the Korean Peninsula located out from the far east of the Asian landmass. The only country with a land border to South Korea is North Korea, lying to the north with 238 kilometres (148 mi) of the border running along the Korean Demilitarized Zone. </font>
+  </div>
+</div>
+
+<div class="gallery2">
+  <img src="seoul.webp">
+  <div class="desc"><font size="3">Seoul , officially known as the Seoul Special City, is the capital and largest metropolis of South Korea.[9] According to the 2020 census, Seoul has a population of 9.9 million people, and forms the heart of the Seoul Capital Area with the surrounding Incheon metropolis and Gyeonggi province.
+  .</font></div>
+</div>
+
+<div class="gallery2">
+  <img src="kimchi.webp">
+  <div class="desc"><font size="3">Kimchi, is a traditional Korean banchan consisting of salted and fermented vegetables, most commonly using napa cabbage or Korean radish. A wide selection of seasonings are used, including gochugaru, spring onions, garlic, ginger, and jeotgal, etc. Kimchi is also used in a variety of soups and stews. Looks like a dessert. Koreans are use it as a side dish. </font>
+  </div>
+</div>
+
+<div class="gallery2">
+  <img src="national animal.jpg">
+  <div class="desc"><font size="3">The Siberian tiger or Amur tiger is a population of the tiger subspecies Panthera tigris tigris native to the Russian Far East, Northeast China and possibly North Korea.It once ranged throughout the Korean Peninsula, but currently inhabits mainly the Sikhote-Alin mountain region. </font>
+  </div>
+</div>
+
+<div class="gallery2">
+  <img src="national bird.jpg">
+ <div class="desc"><font size="3">The Oriental magpie (Pica serica) is a species of magpie found from south-eastern Russia and Myanmar to eastern China, Korea, Taiwan, Japan and northern Indochina. It is also a common symbol of the Korean identity, and has been adopted as the "official bird" of numerous South Korean cities, counties and provinces. </font>
+  </div>
+</div>
+
+<div class="gallery2">
+  <img src="national sport.jpg">
+ <div class="desc"><font size="3">Taekwondo is a Korean martial arts involving punching and kicking techniques, with emphasis on head-height kicks, spinning jump kicks, and fast kicking techniques. The literal translation for taekwondo is "the art or way of". They are a kind of martial arts in which one attacks or defends with hands and feet.</font>
+  </div>
+</div>
+
+<div class="gallery2">
+  <img src="National-Flower.jpg">
+  <div class="desc"><font size="3">Hibiscus syriacus is a species of flowering plant in the mallow family, Malvaceae. It is native to south-central and southeast China, but widely introduced elsewhere, including much of Asia, both in the east and the west.[3] It was given the epithet syriacus because it had been collected from gardens in Syria. Common names include the rose of Sharon.</font>
+  </div>
+</div>
+</div>
+
+
+<h2>..LETS COMMUNICATE WITH EACH OTHER..</h2>
+<div class="gallery4">
+  
+  <div class="w3-content w3-section" style="max-width:500px">
+  <img class="mySlides" src="bulgogi.webp" style="width:100%">
+  <img class="mySlides" src="samgyeopsal.webp" style="width:100%">
+  <img class="mySlides" src="culture.webp" style="width:100%">
+  <img class="mySlides" src="ttobokki.webp" style="width:100%">
+  <img class="mySlides" src="dance.jpg" style="width:100%">
+  <img class="mySlides" src="lotte-world.jpg" style="width:100%">
+</div>
+<script>
+var myIndex = 0;
+carousel();
+
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  myIndex++;
+  if (myIndex > x.length) {myIndex = 1}    
+  x[myIndex-1].style.display = "block";  
+  setTimeout(carousel, 2000); // Change image every 2 seconds
+}
+</script></div>
+
+<div class="gallery3">
+  <div class="bg-img">
+<form name="myForm" class="container1" action="action_page.php" onsubmit="return validateForm()" method="post">
+  <br>
+  <b>Name:</b></font> <input id="myInput" type="text" name="fname">
+  <p id="textCaps">WARNING! Caps lock is ON</p>
+  <script>
+var input = document.getElementById("myInput");
+var text = document.getElementById("textCaps");
+input.addEventListener("keyup", function(event) {
+
+if (event.getModifierState("CapsLock")) {
+    text.style.display = "block";
+  } else {
+    text.style.display = "none"
+  }
+});
+</script>
+  <b>Gender:</b></font><input type="text" name="gender">
+  <b>Email:</b></font> <input type="text" name="email">
+  <center><button type="submit" class="btn">SUBMIT</button></center>
+</form></div></div>
+
+<button onclick="topFunction()" id="myBtn" title="Go to top">SCROLL TO TOP</button>
+<script>
+//Get the button
+var mybutton = document.getElementById("myBtn");
+
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+</script>
+<button class="open-button" onclick="openForm()">CHAT</button>
+
+<div class="chat-popup" id="myForm">
+  <form action="https://www.w3schools.com/action_page.php" class="form-container1">
+
+    <label for="msg"><b>Message</b></label>
+    <textarea placeholder="Type message.." name="msg" required></textarea>
+
+    <button type="submit" class="btn1">Send</button>
+    <button type="button" class="btn1 cancel" onclick="closeForm()">Close</button>
+  </form>
+</div>
+
+
+<table border="0" bgcolor="#a52a2a" style="width:100%">
+<td><p><font face="Allegro BT" size="4" color="white"><b><center>C19 Safe & Secure Travel Info</center></b></font></p></td>
+</table>
+<table border="0" bgcolor="#d3d3d3" style="width:100%">
+<tr>
+  <td><p><font size="3"><b>There are no short cuts to any place worth going.<br>
+어디든 가치가 있는 곳으로 가려면 지름길은 없다.</b></font></p></td></tr>
+<tr><td>
+<p><font size="4" color="black"><b>Social Networks</b></font></p></div>
+<span><img src="facebook.png"></span>
+<span><img src="twitter.png"><span>
+<span><img src="googleplus.png"><span>
+<span><img src="youtube.png" width="30" height="30"></span>
+</td></tr>
+</table>
